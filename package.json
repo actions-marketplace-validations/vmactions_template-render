@@ -1,0 +1,25 @@
+{
+  "name": "render",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmactions/render.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions",
+    "Template"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vmactions/render/issues"
+  },
+  "homepage": "https://github.com/vmactions/render",
+  "dependencies": {
+    "@actions/core": "^1.9.0",
+    "ini": "^3.0.0"
+  }
+}

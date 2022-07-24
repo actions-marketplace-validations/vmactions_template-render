@@ -1,0 +1,17 @@
+name: 'Render'
+description: 'Render template files in GitHub Actions'
+inputs:
+  datafile:
+    description: 'The data to render the templates'
+    required: false
+  files:
+    description: 'The list of templates to render'
+    required: false
+
+branding:
+  icon: 'activity'  
+  color: 'green'
+
+runs:
+  using: 'node16'
+  main: 'index.js'
