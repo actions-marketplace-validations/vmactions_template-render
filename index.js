@@ -19,14 +19,14 @@ async function renderFile(tpl, outfile, datafile) {
         if (name in config) {
             value = config[name];
         } else if (name in process.env) {
-            value = process.env[name]
+            value = process.env[name];
         }
 
         if(value && value.startsWith("@")) {
             value = fs.readFileSync(value.substring(1), "utf-8");
         }
-        if(typeof value != undefined) {
-            content = content.replace(new RegExp(match, "g"), value)
+        if(typeof value === 'string') {
+            content = content.replace(new RegExp(match, "g"), value);
         }
     }
 
