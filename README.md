@@ -1,5 +1,5 @@
 # render
-Render templates The latest release is: 
+Render templates The latest release is: v0.0.1
 
 Non defined variableds are kept as-is: {{nodefined}}
 
