@@ -49,11 +49,11 @@ async function main() {
   for (let file of files) {
       core.info("Rendering file: " + file);
       let segs = file.split(":");  //template file : output file: [optional datafile]
-      let tpl = segs[0];
-      let outfile = segs[1];
+      let tpl = segs[0].trim();
+      let outfile = segs[1].trim();
       let f = datafile;
       if(segs.length > 2) {
-        f = segs[2];
+        f = segs[2].trim();
       }
       await renderFile(tpl, outfile, f);
   }
