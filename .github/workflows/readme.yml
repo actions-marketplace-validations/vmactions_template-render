@@ -6,6 +6,7 @@ on:
       - '*'
     paths:
       - '.github/tpl/*'
+      - '.github/data/*'
       - '.github/workflows/readme.yml'
 
   release:
