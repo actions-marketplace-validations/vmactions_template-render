@@ -25,7 +25,7 @@ jobs:
           myToken: ${{ github.token }}
           view_top: 1
 
-      - name: Using master branch:
+      - name: Using master branch
         run: git switch master || (git fetch --all && git checkout -b master origin/master)
       - name: Update the readme.md
         uses: vmactions/render@main
