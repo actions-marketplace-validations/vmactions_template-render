@@ -14,11 +14,15 @@ async function renderFile(tpl, outfile, datafile) {
         console.log(matches[m][0]);
         let match = matches[m][0]
         let name = matches[m][1];
-        let value = process.env[name];
+        let value = undefined;
+
         if (name in config) {
             value = config[name];
+        } else if (name in process.env) {
+            value = process.env[name]
         }
-        if(value.startsWith("@")) {
+
+        if(value && value.startsWith("@")) {
             value = fs.readFileSync(value.substring(1), "utf-8");
         }
         if(typeof value != undefined) {
