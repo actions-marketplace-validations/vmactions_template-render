@@ -6,7 +6,7 @@
 # render
 Render templates The latest release is: {{TAG_NAME}}
 
-Non defined variableds are kept as-is: {{nodefined}}
+Non defined variables are kept as-is: {{nodefined}}
 
 this is a {{Test}} .
 
