@@ -17,3 +17,10 @@ ${{no}}
 
 Test
 
+Example usage:
+
+```
+{{usage}}
+
+```
+
